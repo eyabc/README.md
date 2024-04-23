@@ -17,6 +17,7 @@
 #### Java
 - [JMX > javax.management.InstanceNotFoundException](https://medium.com/@bey4314/javax-management-instancenotfoundexception-6d3182917f87)
 - [Java 의 Record 타입 굳이 써야 할까?](https://medium.com/@bey4314/java-%EC%9D%98-record-%ED%83%80%EC%9E%85-%EA%B5%B3%EC%9D%B4-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-cfd65814e51e)
+- [Java Record — Non-canonical record constructor must delegate to another constructor](https://medium.com/@bey4314/java-record-53768e6eaedf)
 #### MySql
 - [MySql 필드 값에 여러가지 값을 넣기 위한 방법](https://medium.com/@bey4314/mysql-%ED%95%84%EB%93%9C-%EA%B0%92%EC%97%90-%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EA%B0%92%EC%9D%84-%EB%84%A3%EA%B8%B0-%EC%9C%84%ED%95%9C-%EB%B0%A9%EB%B2%95-be29b68462d1)
 - [MySql 쿼리 성능 개선](https://medium.com/@bey4314/mysql-%EC%BF%BC%EB%A6%AC-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0-0141d9d062da)
