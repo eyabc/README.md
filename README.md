@@ -32,6 +32,7 @@
 #### Kafka
 - [docker-compose 로 Kafka 컨테이너를 생성하고, 어플리케이션에서 접근하기](https://medium.com/@bey4314/docker-compose-%EB%A1%9C-kafka-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90%EC%84%9C-%EC%A0%91%EA%B7%BC%ED%95%98%EA%B8%B0-f7915850619c)
 - [IntelliJ Kafka 도구 사용하기](https://medium.com/@bey4314/docker-compose-%EB%A1%9C-kafka-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90%EC%84%9C-%EC%A0%91%EA%B7%BC%ED%95%98%EA%B8%B0-f7915850619c)
+- [Java Kafka Consumer 구현](https://medium.com/@bey4314/java-kafka-consumer-%EA%B5%AC%ED%98%84-5c186307800a)
 
 #### ETC
 
