@@ -46,3 +46,6 @@
 - [robots.txt, sitemap.xml](https://medium.com/@bey4314/robots-txt-sitemap-xml-343a317a75f2)
 
 #### Linux
+
+#### frontend
+- [Webpack devserver proxy](https://medium.com/@bey4314/webpack-devserver-proxy-52cf5047301b)
