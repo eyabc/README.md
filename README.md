@@ -20,6 +20,7 @@
 - [Java Record — Non-canonical record constructor must delegate to another constructor](https://medium.com/@bey4314/java-record-53768e6eaedf)
 - [Java UnMarshall: XML to Object](https://medium.com/@bey4314/java-xml-to-object-8e63d98ace3a)
 - [Javadoc 작성하기 with IntelliJ, jenkins 서버 배포까지](https://medium.com/@bey4314/javadoc-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0-with-c8fd2f0cc8d8)
+- [Java HTML Unescape](https://medium.com/@bey4314/java-html-unescape-4401bae5744e)
 #### MySql
 - [MySql 필드 값에 여러가지 값을 넣기 위한 방법](https://medium.com/@bey4314/mysql-%ED%95%84%EB%93%9C-%EA%B0%92%EC%97%90-%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EA%B0%92%EC%9D%84-%EB%84%A3%EA%B8%B0-%EC%9C%84%ED%95%9C-%EB%B0%A9%EB%B2%95-be29b68462d1)
 - [MySql 쿼리 성능 개선](https://medium.com/@bey4314/mysql-%EC%BF%BC%EB%A6%AC-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0-0141d9d062da)
