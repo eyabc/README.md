@@ -51,3 +51,6 @@
 
 #### frontend
 - [Webpack devserver proxy](https://medium.com/@bey4314/webpack-devserver-proxy-52cf5047301b)
+
+#### Spring Batch
+- [실행중인 Job 을 종료하는 Job 개발, JobOperator, JPA](https://medium.com/@bey4314/spring-batch-%EC%8B%A4%ED%96%89%EC%A4%91%EC%9D%B8-job-%EC%9D%84-%EC%A2%85%EB%A3%8C%ED%95%98%EB%8A%94-job-%EA%B0%9C%EB%B0%9C-95e559cd953d)
