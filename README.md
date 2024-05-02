@@ -10,6 +10,8 @@
 
 ### Articles
 
+#### IDE
+- [IntelliJ Java SonarLint Plugin](https://medium.com/@bey4314/intellij-java-sonarlint-plugin-6af7b29b0cdc)
 
 #### Test Code
 - [JUnit 5 gradle (groovy) 의존성 설정하기](https://medium.com/@bey4314/junit-5-gradle-groovy-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-11a5ff79245e)
