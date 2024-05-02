@@ -24,6 +24,7 @@
 - [Effective Java > Ch1 들어가기](https://eyabc.github.io/docs/java/effective-java/ch1)
 - [Effective Java > Ch2 객체 생성과 파괴](https://eyabc.github.io/docs/java/effective-java/ch2/index)
 - [Effective Java > Ch2 객체 생성과 파괴 > 생성자 대신 정적 팩터리 메서드를 고려하라](https://eyabc.github.io/docs/java/effective-java/ch2/ITEM1)
+- [JAXB Unmarshal Setter](https://medium.com/@bey4314/jaxb-unmarshal-setter-dbf560fedea3)
 
 #### MySql
 - [MySql 필드 값에 여러가지 값을 넣기 위한 방법](https://medium.com/@bey4314/mysql-%ED%95%84%EB%93%9C-%EA%B0%92%EC%97%90-%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EA%B0%92%EC%9D%84-%EB%84%A3%EA%B8%B0-%EC%9C%84%ED%95%9C-%EB%B0%A9%EB%B2%95-be29b68462d1)
