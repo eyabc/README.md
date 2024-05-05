@@ -9,7 +9,7 @@
 
 #### collosseum-ticketing
 - 개요
-  - 콜로세움 예약 가능 티켓 발생 시, slack 으로 알림을 받을 수 있는 gitactive flow 작성. 
+  - 콜로세움 예약 가능 티켓 발생 시, slack 으로 알림을 받을 수 있는 git action flow 작성. 
 - repository
   - https://github.com/eyabc/collosseum-ticketing-macro
 - tech
