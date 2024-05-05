@@ -17,11 +17,12 @@
 
 #### culture-infomation
 - 개요
-  - 문화 정보를 크롤링하는 git action flow 작성.
+  - 문화 정보를 크롤링하는 git action flow 작성하고, react 로 웹뷰 구현
 - tech
-  - node.js
+  - node.js, react.js
 - repository
   - https://github.com/eyabc/culture-infomation
+  - https://github.com/eyabc/culture-infomation-frontend
 
 
 
