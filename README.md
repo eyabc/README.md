@@ -53,6 +53,7 @@
 - [Why use Kafka Connect as a data pipeline? Unpacking the open source kafka-sink-connector!](https://gitmind.com/app/docs/mhbifts9)
 - [AB Test](https://gitmind.com/app/docs/m5hxci8q)
 - [Jira 적응기](https://medium.com/@bey4314/jira-%EC%A0%81%EC%9D%91%EA%B8%B0-9f2158d637ae)
+- [비밀번호와 무의식적 암시](https://medium.com/@bey4314/%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0-7831cad2c59c)
   
 #### Search Engine Optimization
 - [robots.txt, sitemap.xml](https://medium.com/@bey4314/robots-txt-sitemap-xml-343a317a75f2)
