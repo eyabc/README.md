@@ -26,7 +26,7 @@
 - [Effective Java > Ch1 들어가기](https://eyabc.github.io/docs/java/effective-java/ch1)
 - [Effective Java > Ch2 객체 생성과 파괴](https://eyabc.github.io/docs/java/effective-java/ch2/index)
 - [Effective Java > Ch2 객체 생성과 파괴 > 생성자 대신 정적 팩터리 메서드를 고려하라](https://eyabc.github.io/docs/java/effective-java/ch2/ITEM1)
-- [JAXB Unmarshal Setter](https://medium.com/@bey4314/jaxb-unmarshal-setter-dbf560fedea3)
+- [JAXB Unmarshal Setter, EnumType](https://medium.com/@bey4314/jaxb-unmarshal-setter-dbf560fedea3)
 - [Java 15 Multi-line String Text Block](https://medium.com/@bey4314/java-15-multi-line-string-text-block-307125d98c87)
 
 #### MySql
