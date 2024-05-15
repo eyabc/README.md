@@ -135,7 +135,7 @@
 - [쓰레드 파티션 네임 중첩 이슈](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-cannot-restart-step-from-starting-status-e4ab9fa761a3)
 - [Datasource ConnectionPoolSize Exception](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-datasource-connectionpoolsize-exception-293d2def021b)
 - [flow 의step 에서 StepExitStatus 를 Failed 로 변경한다면 다음 Step 은 실행되지 않는다](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-flow-%EC%9D%98step-%EC%97%90%EC%84%9C-stepexitstatus-%EB%A5%BC-failed-%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%9C%EB%8B%A4%EB%A9%B4-%EB%8B%A4%EC%9D%8C-step-%EC%9D%80-%EC%8B%A4%ED%96%89%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94%EB%8B%A4-d39c4e35413c)
-- [ScopeNotActiveException]](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-scopenotactiveexception-8e63bfc35b7d)
+- [ScopeNotActiveException](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-scopenotactiveexception-8e63bfc35b7d)
 - [Spring Batch JobParameter 는 변경할 수 없다](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-jobparameter-%EB%8A%94-%EB%B3%80%EA%B2%BD%ED%95%A0-%EC%88%98-%EC%97%86%EB%8B%A4-36ab28607357)
 - [Spring Quartz JobData 의 Deserialization, Serialization Ingore serialVersionUID Exception](https://medium.com/@EeUuNnYuOuUuNnGg/spring-quartz-jobdata-%EC%9D%98-deserialization-serialization-ingore-serialversionuid-exception-847aaf3ebec2)
 - [MySQL 과 Spring Batch 의 통계 작업 개발](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-%EA%B3%BC-spring-batch-%EC%9D%98-%ED%86%B5%EA%B3%84-%EC%9E%91%EC%97%85-%EA%B0%9C%EB%B0%9C-c119a4ca6c1c)
