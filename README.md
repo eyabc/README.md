@@ -25,6 +25,36 @@
   - https://github.com/eyabc/culture-infomation-frontend
 
 
+#### Quartz Scheduler 어드민의 동적 데이터소스 구현 [🔗](https://zuminternet.github.io/ZUM-Pilot-advanced_quartz_scheduler_admin/)
+- 기간
+  - 2020.12 ~ 2021.02  
+- 개요
+  - 다중 데이터 소스를 동적으로 관리하고 모니터링하는 어드민 구현
+- 사용 기술
+  - SpringBoot, Java, Node, SpringJPA, Spring Security, Vuex, Vue2, ES2020, MySQL, RoutingDataSource
+- 내용
+  - 어드민 패널을 통해 동적으로 데이터 소스를 추가 및 제거할 수 있는 기능을 구현하여 다중 데이터베이스 간의 전환을 쉽게 수행하도록 하였음.
+  - 데이터 소스의 Connection 설정을 동적으로 설정할 수 있도록 개발
+  - 각 데이터 소스의 연결 상태 모니터링 기능 개발
+  - 사용자의 역할에 따라 어드민의 특정 기능에 대한 접근을 제한하는 기능 개발
+  - 배포된 프로젝트 버전을 확인할 수 있는 StateController 추가
+  - Gradle 을 최신 버전으로 업그레이드
+  - Spring Boot 버전 업그레이드 중 Quartz jobData Converter 의 직렬화/역직렬화 오류 수정. [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-quartz-jobdata-%EC%9D%98-deserialization-serialization-ingore-serialversionuid-exception-847aaf3ebec2)
+  - Spring Security의 PasswordEncoder를 사용하여 안전한 비밀번호 저장
+  - 백엔드 예외를 프론트엔드가 이해할 수 있는 예외 코드로 처리하여 브라우저 클라이언트가 대응할 수 있는 동작을 정의함
+  - SecurityContextHolder를 활용하여 요청이 인증 확인
+  - Spring Data의 AuditorAware를 구현하여 JpaAuditing으로 자동으로 사용자 정보 기록
+  - Google OAuth 로그인 시 회사 이메일 유효성 검증
+  - 사용자 역할 변경 시 세션 무효화를 통한 보안 강화
+  - 중복 코드 제거를 위해 공통 모달 컴포넌트 생성
+  - 톰캣 재시작 시 세션을 디스크에 저장하지 않도록 구성
+  - Axios 요청 타임아웃 설정으로 백엔드 서버 부하 최소화
+  - Vue keep-alive 제거로 데이터 초기화 개선
+  - 텍스트 엘리먼트에 대한 상수 선언으로 오타 최소화 및 코드 가독성 향상
+  - 실행 중인 job의 ID를 조회하는 기능 추가
+  - logback 설정 추가
+  - Batch 사용이 없는 데이터베이스에 연결된 Quartz Scheduler 예외 처리.  
+
 
 ### Articles
 
