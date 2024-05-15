@@ -86,3 +86,12 @@
 
 #### Spring Batch
 - [실행중인 Job 을 종료하는 Job 개발, JobOperator, JPA](https://medium.com/@bey4314/spring-batch-%EC%8B%A4%ED%96%89%EC%A4%91%EC%9D%B8-job-%EC%9D%84-%EC%A2%85%EB%A3%8C%ED%95%98%EB%8A%94-job-%EA%B0%9C%EB%B0%9C-95e559cd953d)
+
+### Book
+- [Real MySQL 8.0 (1권)](https://search.shopping.naver.com/book/catalog/32443973624?query=Mysql%208.0&NaPm=ct%3Dlw7gpmy8%7Cci%3D32cea7114111a158e964d9be5c0c7fa73cfd7af7%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3D5bc7b1d55bfde67cae5194b43438b99fc60c30ed)
+- [이것이 레디스다](https://search.shopping.naver.com/book/catalog/32436028951?query=%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EB%A0%88%EB%94%94%EC%8A%A4%EB%8B%A4&NaPm=ct%3Dlw7gqnzk%7Cci%3D17a10802e0c9cbf97ef55bff9cdade78631e2969%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3Db45e38a69a38726078cbec6d00669cc9bfb1b7d8)
+- [리팩터링](https://www.yes24.com/Product/Goods/89649360)
+- [Java의 정석](https://search.shopping.naver.com/book/catalog/32466681076?cat_id=50010920&frm=PBOKPRO&query=Java+%EC%9D%98+%EC%A0%95%EC%84%9D&NaPm=ct%3Dlw7gw048%7Cci%3D6d50d41884f105fdd1789de7b5997091ea592337%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D3b79e636e98238b285a7696dfb9ca84aba974338)
+- [밑바닥부터 만드는 컴퓨팅 시스템](https://search.shopping.naver.com/book/catalog/39383703623?cat_id=50010921&frm=PBOKPRO&query=%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0+%EB%A7%8C%EB%93%9C%EB%8A%94+%EC%BB%B4%ED%93%A8%ED%8C%85+%EC%8B%9C%EC%8A%A4%ED%85%9C&NaPm=ct%3Dlw7gwxao%7Cci%3Dca55422478c3ddb738d46eb7d86a85358cf81939%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Df5cf1ea2bbae389d59ab4d7d5f971437d06ac640)
+- [스프링 입문을 위한 자바 객체 지향의 원리와 이해](https://search.shopping.naver.com/book/catalog/32462919817?cat_id=50010920&frm=PBOKPRO&query=%EC%8A%A4%ED%94%84%EB%A7%81+%EC%9E%85%EB%AC%B8%EC%9D%84+%EC%9C%84%ED%95%9C+%EC%9E%90%EB%B0%94+%EA%B0%9D%EC%B2%B4+%EC%A7%80%ED%96%A5%EC%9D%98+%EC%9B%90%EB%A6%AC%EC%99%80+%EC%9D%B4%ED%95%B4&NaPm=ct%3Dlw7gxsxk%7Cci%3D09f7a89688a71d5324542a08cccf981af11bccfa%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D5b5f855b66aa95ee8316e70a9ac5bb60ab01236d)
+- [MongoDB 완벽 가이드](https://search.shopping.naver.com/book/catalog/32481967929?cat_id=50010586&frm=PBOKPRO&query=MONGODB+%EC%99%84%EB%B2%BD+%EA%B0%80%EC%9D%B4%EB%93%9C&NaPm=ct%3Dlw7gyt74%7Cci%3D7a6c1982bb77a030462df471eee56ad34fe49ab3%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Da628c67a344293ad848763efedcbc698a3d665cf)
