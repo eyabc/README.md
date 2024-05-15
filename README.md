@@ -23,6 +23,19 @@
 - repository
   - https://github.com/eyabc/culture-infomation
   - https://github.com/eyabc/culture-infomation-frontend
+ 
+#### 뉴스줌 프로젝트 개선
+- 기간
+  - 2021.02 ~ 
+- 내용
+  - Migration 된 테이블의 데이터를 제거하여, 불필요한 자원을 소모하는 문제를 해결. Batch, CMS, API, 파서 등에서 데이터소스와 관련 코드 제거하고 안전하게 DB를 삭제하는 작업 완료
+  - 사내 Nexus의 프레임워크의 의존성을 제거하기 위해, 신규 멀티 모듈 프로젝트를 생성함으로써 신규 개발에 유연성을 부여하였음. MySQL 업그레이드 후 Jooq 버전 변경, Redis 도입, 테스트코드 도입과 같은 어려움을 해결하였습니다.
+  - 레거시 모듈은 스파게티 코드로 인해 테스트 작성과 리팩터링이 어려웠고, 이로 인해 프로그램의 신뢰성과 안정성이 저하되었습니다. 또한, 신규 개발자의 적응이 어려워 프로그램 품질이 저하되는 문제점을 인식했습니다. 새로운 기술을 유연하게 적용하고 유지보수성을 향상시키기 위해 서브 프로젝트 간의 의존성을 최소화함으로써 프로그램의 품질과 안정성 향상.
+  - 테스트 코드의 중요성을 팀원에게 공유 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80%EC%9D%98-%ED%9A%A8%EA%B3%BC-13c83b661e6a)
+  - 단일 gradle 모듈에서 멀티 모듈로 합쳐진 프로젝트의, 스파게티 코드를 인터페이스로 통합하는 개선 작업 진행
+  - 캐시 데이터 관리 시스템으로, TTL을 활용하여 주기적인 갱신 및 불필요한 데이터 관리를 수행함. [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/ttl-%EC%9D%B4-%ED%95%84%EC%9A%94%ED%95%9C-%EC%BA%90%EC%8B%9C%EC%99%80-ttl-%EC%9D%B4-%ED%95%84%EC%9A%94%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0-4f76572cf9ef)
+  - API 프로젝트 전체 endpoint 의 swagger 적용 및 문서화. nginx access 로그를 통한 사용되지 않는 endpoint 분석. endpoint 사용처 문서화
+  - Java melody 모니터링 라이브러리 적용 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/java-melody-af186124ac4c)
 
 
 #### Quartz Scheduler 어드민의 동적 데이터소스 구현 [🔗](https://zuminternet.github.io/ZUM-Pilot-advanced_quartz_scheduler_admin/)
