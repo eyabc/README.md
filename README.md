@@ -91,6 +91,7 @@
 - [Effective Java > Ch2 객체 생성과 파괴 > 생성자 대신 정적 팩터리 메서드를 고려하라](https://eyabc.github.io/docs/java/effective-java/ch2/ITEM1)
 - [JAXB Unmarshal Setter, EnumType](https://medium.com/@bey4314/jaxb-unmarshal-setter-dbf560fedea3)
 - [Java 15 Multi-line String Text Block](https://medium.com/@bey4314/java-15-multi-line-string-text-block-307125d98c87)
+- [Java9 Module](https://medium.com/@EeUuNnYuOuUuNnGg/java9-module-79f060b2a9bb)
 
 #### JPA
 - [JPA, javax.persistence, Hibernate, Spring Data JPA](https://medium.com/@EeUuNnYuOuUuNnGg/spring-jpa-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0-d32a07dd045a)
