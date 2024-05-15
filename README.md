@@ -132,6 +132,19 @@
 
 #### Spring Batch
 - [실행중인 Job 을 종료하는 Job 개발, JobOperator, JPA](https://medium.com/@bey4314/spring-batch-%EC%8B%A4%ED%96%89%EC%A4%91%EC%9D%B8-job-%EC%9D%84-%EC%A2%85%EB%A3%8C%ED%95%98%EB%8A%94-job-%EA%B0%9C%EB%B0%9C-95e559cd953d)
+- [쓰레드 파티션 네임 중첩 이슈](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-cannot-restart-step-from-starting-status-e4ab9fa761a3)
+- [Datasource ConnectionPoolSize Exception](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-datasource-connectionpoolsize-exception-293d2def021b)
+- [flow 의step 에서 StepExitStatus 를 Failed 로 변경한다면 다음 Step 은 실행되지 않는다](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-flow-%EC%9D%98step-%EC%97%90%EC%84%9C-stepexitstatus-%EB%A5%BC-failed-%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%9C%EB%8B%A4%EB%A9%B4-%EB%8B%A4%EC%9D%8C-step-%EC%9D%80-%EC%8B%A4%ED%96%89%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94%EB%8B%A4-d39c4e35413c)
+- [ScopeNotActiveException]](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-scopenotactiveexception-8e63bfc35b7d)
+- [Spring Batch JobParameter 는 변경할 수 없다](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-jobparameter-%EB%8A%94-%EB%B3%80%EA%B2%BD%ED%95%A0-%EC%88%98-%EC%97%86%EB%8B%A4-36ab28607357)
+- [Spring Quartz JobData 의 Deserialization, Serialization Ingore serialVersionUID Exception](https://medium.com/@EeUuNnYuOuUuNnGg/spring-quartz-jobdata-%EC%9D%98-deserialization-serialization-ingore-serialversionuid-exception-847aaf3ebec2)
+- [MySQL 과 Spring Batch 의 통계 작업 개발](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-%EA%B3%BC-spring-batch-%EC%9D%98-%ED%86%B5%EA%B3%84-%EC%9E%91%EC%97%85-%EA%B0%9C%EB%B0%9C-c119a4ca6c1c)
+- [MultiResourceItemReader 는 Resource 를 어떻게 읽어 올까?](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-multiresourceitemreader-%EB%8A%94-resource-%EB%A5%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9D%BD%EC%96%B4-%EC%98%AC%EA%B9%8C-416fee7b3d4a)
+- [Spring Batch ExitStatus 과 Test Code 작성하기](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-exitstatus-%EA%B3%BC-test-code-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0-7a67d6baca21)
+- [Spring Batch 의 ExecutionContext 의 value 타입](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-%EC%9D%98-executioncontext-%EC%9D%98-value-%ED%83%80%EC%9E%85-60983a109c4b)
+- [Spring Batch Partitioner JobScope 의 중복](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-jobscope-%EC%9D%98-%EC%A4%91%EB%B3%B5-96383da69808)
+- [Spring Batch Test 코드에서 Job 실행 시키기](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-test-%EC%BD%94%EB%93%9C%EC%97%90%EC%84%9C-job-%EC%8B%A4%ED%96%89-%EC%8B%9C%ED%82%A4%EA%B8%B0-5f57c46972aa)
+- [SimpleStepHandler](https://medium.com/@EeUuNnYuOuUuNnGg/simplestephandler-0f5b68a55516)
 
 ### Book
 - [Real MySQL 8.0 (1권)](https://search.shopping.naver.com/book/catalog/32443973624?query=Mysql%208.0&NaPm=ct%3Dlw7gpmy8%7Cci%3D32cea7114111a158e964d9be5c0c7fa73cfd7af7%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3D5bc7b1d55bfde67cae5194b43438b99fc60c30ed)
