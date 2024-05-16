@@ -1,3 +1,18 @@
+### Currier
+#### EST AID (구 Zum Internet)
+- Position
+  - FullStack Developer
+- 재직 기간
+  - 2020.11 ~ 재직중 
+- 업무
+  - 줌인터넷 포털 뉴스줌 웹서비스 풀스택 개발 https://news.zum.com/
+  - 매체사로부터 기사데이터 송고받기 위한 FTP 서버와 NAS 시스템 이슈 대응
+  - 기사데이터 문서를 파싱 하여 뉴스줌 DB 에 저장하는 어플리케이션 개발
+  - DB 의 기사 데이터를 포털에 노출하기 위한 Rest API 개발
+  - 뉴스 Backoffice 개발
+  - 뉴스 Pc 및 Mobile SSR 서버 개발
+  - DB 데이터 유지보수를 위한 Batch 어플리케이션 개발
+
 ### Project
 
 #### 뉴스 검색 파서 리팩터링 
