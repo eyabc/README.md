@@ -12,6 +12,13 @@
   - 뉴스 Backoffice 개발
   - 뉴스 Pc 및 Mobile SSR 서버 개발
   - DB 데이터 유지보수를 위한 Batch 어플리케이션 개발
+ 
+### TechSet
+★★★ Java, Javascript, SpringFramework, Vue.js, MySql, Jooq, Linux,  Jquery, Git, Gitlab, IDC
+
+★★ Shell script, CSS, Nginx, FTP, SFTP, Redis, Spring Batch, JPA, Quartz, Docker, Jenkins, Javadoc, UnitTest, TDD, Swagger, CrossBrowsing, Ehcache, Redis Sentinel, Kafka
+
+★dart, Express.js, Nest.js, Flutter, React.js, MongoDB
 
 ### Project
 
@@ -38,6 +45,16 @@
 - repository
   - https://github.com/eyabc/culture-infomation
   - https://github.com/eyabc/culture-infomation-frontend
+ 
+#### 줌인터넷 프로젝트 기능 개발 
+- 기간 2021.02 ~
+
+- [줌프런트 뉴스박스](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F119ddbc4-c469-4b2a-ad73-653ceed5ec81%2Fadc05539-8696-499c-91ac-fba7ec95df85%2FUntitled.png?table=block&id=68f63463-6f5d-4d45-8376-40e3e5ea9d45&spaceId=119ddbc4-c469-4b2a-ad73-653ceed5ec81&width=2000&userId=3870e774-c131-4649-accd-876479d0a85d&cache=v2) 기능 개발
+  - 데이터 중심의 자동화된 뉴스 생성 및 편집 시스템 개발. 빅데이터 추천 기사목록 중 조건에 따라 뉴스박스 데이터 서빙 구현
+  - Backoffice의 뉴스박스 편집 기능 외부링크 기사 추가, 이미지 편집, 순서 편집, 기사 제외/포함, 미리보기, 생성, 순서 고정 등의 기능 제공.
+  - Batch 로 주기적인 뉴스박스 데이터 갱신.
+  - 생성된 데이터 서빙을 위한 Rest Api 개발.
+    
  
   
  
