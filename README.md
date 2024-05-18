@@ -46,6 +46,16 @@
   - https://github.com/eyabc/culture-infomation
   - https://github.com/eyabc/culture-infomation-frontend
  
+#### MySQL 업그레이드, 슬로우 쿼리 및 Replication Delay 이슈 해결, 데이터 일관성 강화, 안정성 개선 등 다양한 작업 수행
+- MySQL 슬로우 쿼리로 인한 Connection request timed out 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-slow-query-%EB%A1%9C-%EC%9D%B8%ED%95%9C-connection-request-timed-out-%EC%9D%B4%EC%8A%88-37bf90eda792)
+- MySQL 의 Replication Delay 발생사례와 VIP 에서 서버를 제외하여 데이터 갱신 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-%EC%9D%98-replication-delay-%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EB%B2%84%EA%B7%B8-%EB%B0%9C%EC%83%9D-2456ed49f693)
+- MySql 5.5 → 8.0 업그레이드
+  - 어플리케이션의 mysql connector driver 버전 업그레이드
+  - 업그레이드 후 옵티마이저의 쿼리 실행계획의 변경으로 일부, 쿼리들에 straight join Hint 문 추가
+  - 트랜잭션에 서로 다른 스토리지엔진의 테이블 접근이 존재할 때 에러나는 이슈, MyISAM 테이블을 innoDB 로 변경
+- Slow query 를 유발하는 원인에 대한 해결책을 기획적으로 고민 [🔗](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F119ddbc4-c469-4b2a-ad73-653ceed5ec81%2Fa2922253-a639-4a66-9f05-039d2ae18e49%2FUntitled.png?table=block&id=956cd31e-7c21-4da3-9af1-ef501342f886&spaceId=119ddbc4-c469-4b2a-ad73-653ceed5ec81&width=2000&userId=3870e774-c131-4649-accd-876479d0a85d&cache=v2)
+- Join 관련 이슈로 인해 테이블 분석 후, 중복 데이터로 인한 2번 노출 문제 해결 [🔗]()
+ 
 #### 줌인터넷 프로젝트 기능 개발 
 - 기간 2021.02 ~
   
