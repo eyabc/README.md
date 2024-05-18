@@ -48,7 +48,7 @@
  
 #### 줌인터넷 프로젝트 기능 개발 
 - 기간 2021.02 ~
-
+  
 - [줌프런트 뉴스박스](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F119ddbc4-c469-4b2a-ad73-653ceed5ec81%2Fadc05539-8696-499c-91ac-fba7ec95df85%2FUntitled.png?table=block&id=68f63463-6f5d-4d45-8376-40e3e5ea9d45&spaceId=119ddbc4-c469-4b2a-ad73-653ceed5ec81&width=2000&userId=3870e774-c131-4649-accd-876479d0a85d&cache=v2) 기능 개발
   - 데이터 중심의 자동화된 뉴스 생성 및 편집 시스템 개발. 빅데이터 추천 기사목록 중 조건에 따라 뉴스박스 데이터 서빙 구현
   - Backoffice의 뉴스박스 편집 기능 외부링크 기사 추가, 이미지 편집, 순서 편집, 기사 제외/포함, 미리보기, 생성, 순서 고정 등의 기능 제공.
@@ -75,6 +75,9 @@
 - 투자줌 해외증시 국내증시 API 개발
   - 사내 투자 서비스 종료로 코드 삭제 및 뉴스줌 프로젝트 정리를 위한 배포 프로세스 구축. 코드 제거 시 객체지향의 중요성을 포스팅함 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%A2%85%EB%A3%8C-%EB%8C%80%EC%9D%91-%EC%97%B0%EA%B4%80-%EC%BD%94%EB%93%9C-%EC%A0%9C%EA%B1%B0-9c6308c83ee8)
   - 국내증시 및 해외증시 페이지 Rest API, Backoffice, Batch 개발 및 MySQL 스키마 설계
+- 뉴스줌 news.zum.com 리뉴얼
+  - 뉴스줌 웹사이트 리뉴얼을 위해, 레거시 아키텍쳐를 분석하고 신규 RestAPI 개발, 복잡한 로직 처리와 기사 배열 자동 편집을 위한 Batch, Backoffice 개발
+- 
 
  
 #### 뉴스줌 프로젝트 개선
