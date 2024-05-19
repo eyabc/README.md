@@ -46,6 +46,17 @@
   - https://github.com/eyabc/culture-infomation
   - https://github.com/eyabc/culture-infomation-frontend
  
+#### NAS의 static 이미지 삭제 프로젝트 
+- 개요
+  - 이미지 서버에 요청된 path 로, nginx 의 rewrite 규칙을 적용하여 원본 이미지를 리턴하는 서버가 있다. 여러 스토리지가 다양한 경로로 mount 되어 있기 떄문에 nginx 의 rewrite 규칙이 적용되어 있는 것이다.
+  - 기존에 저작권 문제가 있는 이미지 삭제를 위해, nginx rewrite 규칙 대상에 위치하는 리소스의 위치들에서 파일들의 존재여부를 모두 확인하고 이미지 삭제 후, CDN 의 캐시를 purge 하는 과정이 있었다.
+  - 이 과정들을 어플리케이션으로 자동화 하도록 개발하였다.
+- 내용
+  - nginx 의 location, rewrite, root, retry_files 등의 명령어를 코드화하여 요청된 path 와 스토리지에 저장된 이미지를 찾아 원본 이미지를 제거하도록 구현
+  - nginx proxy_pass 를 이용한 무중단 배포 환경을 IDC 에서 구성하고, 젠킨스의 빌드 파이프라인을 통해 CICD 환경을 구성함.
+  - 이미지 삭제 과정의 단위 테스트 코드 작성
+  - 사용자 에러 코드를 정의하여, 이미지 삭제를 요청하는 서버에서 문제를 파악하고 대응할 수 있도록하였음
+ 
 #### MySQL 업그레이드, 슬로우 쿼리 및 Replication Delay 이슈 해결, 데이터 일관성 강화, 안정성 개선 등 다양한 작업 수행
 - MySQL 슬로우 쿼리로 인한 Connection request timed out 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-slow-query-%EB%A1%9C-%EC%9D%B8%ED%95%9C-connection-request-timed-out-%EC%9D%B4%EC%8A%88-37bf90eda792)
 - MySQL 의 Replication Delay 발생사례와 VIP 에서 서버를 제외하여 데이터 갱신 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-%EC%9D%98-replication-delay-%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EB%B2%84%EA%B7%B8-%EB%B0%9C%EC%83%9D-2456ed49f693)
