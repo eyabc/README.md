@@ -46,7 +46,20 @@
   - https://github.com/eyabc/culture-infomation
   - https://github.com/eyabc/culture-infomation-frontend
  
-#### Redis Cache 도입 
+#### 뉴스줌 모바일 어플리케이션의 Frontend-Backend 분리
+- 기간
+  - 2023.07
+- 개요
+  -  Spring MVC Template Engine 프로젝트에서 Api Endpoint 분리 개발.
+  -  주로 유지보수와 광고삽입에 집중된 모바일 프로젝트의 안정화 상태를 고려하고. 뉴스줌 서비스의 현대적 FE 사용자 경험 향상을 위해 프론트파트에 서비스를 인계하기 위한 작업 진행하였음.
+- 내용 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-mvc-template-engine-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-api-endpoint-%EB%B6%84%EB%A6%AC-%EA%B0%9C%EB%B0%9C-2ca4bb04acd1)
+  - 비즈니스 로직이 혼재된 Controller 코드와 JavaScript 코드를 분석하여 API 프로젝트로 Migration.
+  - 백엔드 API를 모바일 웹 서비스에서 분리하고, Swagger를 활용하여 API 명세서 문서 작성
+  - Migration 과정에서는 기존 서비스에 영향을 주지 않도록 Spring RestController의 새로운 Endpoint 생성 및 Migration할 프로젝트의 API 메서드 추가
+  - 스프링 캐시 스케줄러 도입으로 모바일 API 에 캐시 적용. TTL 설정과 주기적 업데이트를 고려하여 안정성 강화.
+  
+ 
+#### 뉴스줌 Redis Cache 도입 
 - 기간
   - 2023.02
 - 개요
@@ -62,9 +75,9 @@
   - 안정적인 프로젝트 운영을 위한 배포 및 롤백 시나리오를 구성하여 장애 대응 및 시스템 안정성을 고려
   - 도메인 특성을 고려하여 적절하게 Redis의 maxmemory-policy 정책을 volatile-lru로 설정하여 Expire 설정된 키 중에서 오래된 키를 삭제하도록 구성했습니다.
   - Sentinel 의 부하 분산 방법으로, REPLICA_PREFERRED 선택. GET 명령어는 Replica에서 실행하고, 장애를 대비하기 위해 Replica 를 사용할 수 없을 경우 Master에서 실행하도록 설정하였음.
-  - 
+    
  
-#### NAS의 static 이미지 삭제 프로젝트 
+#### 뉴스줌 NAS의 static 이미지 삭제 프로젝트 
 - 기간
   - 2022.11 
 - 개요
@@ -77,7 +90,7 @@
   - 이미지 삭제 과정의 단위 테스트 코드 작성
   - 사용자 에러 코드를 정의하여, 이미지 삭제를 요청하는 서버에서 문제를 파악하고 대응할 수 있도록하였음
  
-#### MySQL 업그레이드, 슬로우 쿼리 및 Replication Delay 이슈 해결, 데이터 일관성 강화, 안정성 개선 등 다양한 작업 수행
+#### 뉴스줌 MySQL 업그레이드, 슬로우 쿼리 및 Replication Delay 이슈 해결, 데이터 일관성 강화, 안정성 개선 등 다양한 작업 수행
 - MySQL 슬로우 쿼리로 인한 Connection request timed out 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-slow-query-%EB%A1%9C-%EC%9D%B8%ED%95%9C-connection-request-timed-out-%EC%9D%B4%EC%8A%88-37bf90eda792)
 - MySQL 의 Replication Delay 발생사례와 VIP 에서 서버를 제외하여 데이터 갱신 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-%EC%9D%98-replication-delay-%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EB%B2%84%EA%B7%B8-%EB%B0%9C%EC%83%9D-2456ed49f693)
 - MySql 5.5 → 8.0 업그레이드
