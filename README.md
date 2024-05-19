@@ -53,6 +53,12 @@
   - 대용량 데이터 처리를 중심으로 한 기능들을 구현한 프로젝트. MySql 테이블 대상으로 하는 작업 주로 진행하였음
 - 내용
   - Job 실행 중인 Job 종료 기능 개발 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-%EC%8B%A4%ED%96%89%EC%A4%91%EC%9D%B8-job-%EC%9D%84-%EC%A2%85%EB%A3%8C%ED%95%98%EB%8A%94-job-%EA%B0%9C%EB%B0%9C-95e559cd953d) 배치의 메타 테이블 BATCH_JOB_EXECUTION에서의 ID 값을 Job Parameter로 활용하여 현재 실행 중인 Job을 중단시키는 Tasklet을 구현. 대용량 데이터 처리와 같이 시간이 오래 걸리는 JOB 중단에 대한 문제 해결
+  - 제휴 종료된 매체사 데이터 삭제 Job, 기존의 20개가 넘는 외래키를 참조하는 테이블들의 레코드를 삭제하는 프로세스를 개선. 타 서비스에 저장된 데이터 삭제를 동기화 하기 위해 ActiveMQ 사용. NAS 에 저장된 이미지를 삭제 하여 저작권 및 리소스 관리를 개선하였음. 수동으로 삭제하고 있던 프로세스를 자동화
+  - 삭제상태 기사 데이터 삭제 Job. 2011년부터 불필요하게 스토리지를 차지하고 있는 삭제상태 기사를 효율적으로 삭제하도록 개선. 1억 건 이상의 대용량 테이블에서 인덱스가 없는 컬럼의 조건으로 데이터를 삭제 하기 위해 chunk 단위로 삭제하여 Query Timeout 이슈 개선.
+  - 외래키 참조가 많은 테이블 로그 데이터 삭제 Job. 10년간 축적된 로그 데이터를 삭제하여 200GB 이상의 공간을 확보.
+  - 송고 기사 통계 집계 Job. Flow와 Partitioner를 활용하여 매체사별로 병렬로 작업이 실행되도록 하여 처리 속도를 향상. 인덱스가 없어 발생하는 슬로우 쿼리 문제를 Redis 를 사용하여 집계.
+  - Quartz + Spring Batch 를 조합하여, 대용량 처리에 적합한 Batch 와, Quartz 를 사용하여 Quartz Job 이 Trigger 가 될 때 Batch Job 을 실행시키는 구조를 구현함
+  - Batch Job 테스트와, Jooq 메서드 테스트 코드를 작성 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-test-%EC%BD%94%EB%93%9C%EC%97%90%EC%84%9C-job-%EC%8B%A4%ED%96%89-%EC%8B%9C%ED%82%A4%EA%B8%B0-5f57c46972aa)
 
 
 #### 뉴스줌 파서 프로젝트
