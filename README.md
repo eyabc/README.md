@@ -54,8 +54,11 @@
   - 업그레이드 후 옵티마이저의 쿼리 실행계획의 변경으로 일부, 쿼리들에 straight join Hint 문 추가
   - 트랜잭션에 서로 다른 스토리지엔진의 테이블 접근이 존재할 때 에러나는 이슈, MyISAM 테이블을 innoDB 로 변경
 - Slow query 를 유발하는 원인에 대한 해결책을 기획적으로 고민 [🔗](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F119ddbc4-c469-4b2a-ad73-653ceed5ec81%2Fa2922253-a639-4a66-9f05-039d2ae18e49%2FUntitled.png?table=block&id=956cd31e-7c21-4da3-9af1-ef501342f886&spaceId=119ddbc4-c469-4b2a-ad73-653ceed5ec81&width=2000&userId=3870e774-c131-4649-accd-876479d0a85d&cache=v2)
-- Join 관련 이슈로 인해 테이블 분석 후, 중복 데이터로 인한 2번 노출 문제 해결 [🔗]()
- 
+- Join 관련 이슈로 인해 테이블 분석 후, 중복 데이터로 인한 2번 노출 문제 해결 [🔗](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F119ddbc4-c469-4b2a-ad73-653ceed5ec81%2Fa34ae61d-ef0e-4537-a97c-20383269b15c%2FUntitled.png?table=block&id=f4be9b71-d1c3-4e6e-99d2-a6b10679549d&spaceId=119ddbc4-c469-4b2a-ad73-653ceed5ec81&width=2000&userId=3870e774-c131-4649-accd-876479d0a85d&cache=v2)
+- Slave, Master MySql DB 커넥션 안정화와 역할 분리를 하기 위해, API 어플리케이션에서는 Slave Datasource 에서 Read 만 하도록 소스 코드를 변경하였고, API 에서 발생하는 Create, Update, Delete 코드를 Batch 혹은 CMS 어플리케이션으로 Migration 진행
+- 실서버 DB 의 리플리케이션이 된 QA DB의, autoincrement duplication 문제 해결
+- ISMS 지적사항 수정
+  
 #### 줌인터넷 프로젝트 기능 개발 
 - 기간 2021.02 ~
   
