@@ -23,28 +23,31 @@
 ### Project
 
 #### 뉴스 검색 파서 리팩터링 
+- 기간 2024.03 ~ 진행중
 - 개요
   - 여러 매체사에서 송고한 XML 파일을 파싱하여 뉴스줌과 줌인터넷의 여러 서비스에서 기사 컨텐츠를 노출하기 위한 프로젝트. 검색엔진에만 노출되는 기사를 송고하는 매체사의 XML 파싱 관리. 검색제휴 기사 파싱 과정 중 기존 현황과 문제점을 분석하여 전체적인 개선을 진행함
 - articles
   - [java-inotify](https://medium.com/@bey4314/mysql-%EC%BF%BC%EB%A6%AC-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0-0141d9d062da)
   - [어떤 Queue 를 사용해야 할까](https://medium.com/@bey4314/%EC%96%B4%EB%96%A4-queue-%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C-fe5bcc0afdc1)
-
-#### collosseum-ticketing
+ 
+#### 뉴스 송고 기사 통계 개발
+- 기간
+  - 2024.01 ~ 2024.03
 - 개요
-  - 콜로세움 예약 가능 티켓 발생 시, slack 으로 알림을 받을 수 있는 git action flow 작성. 
-- repository
-  - https://github.com/eyabc/collosseum-ticketing-macro
-- tech
-  - node.js
+  - 매체사로 부터 송고 받은 기사데이터 특징을 분류하여 카운트를 통계하는 기능 개발. 통계 데이터를 CMS 에서 운영담당자가 조회하는 페이지 개발
+- 내용
+  - Spring Batch 와 Redis Hash, Set 타입을 이용한 통계구현. 인덱스가 없는 컬럼으로 인한 MySql의 슬로우 쿼리 문제 해결. 처리 속도 향상을 1시간에서 1분으로 단축 [🔗](https://medium.com/@bey4314/mysql-%EA%B3%BC-spring-batch-%EC%9D%98-%ED%86%B5%EA%B3%84-%EC%9E%91%EC%97%85-%EA%B0%9C%EB%B0%9C-c119a4ca6c1c)
+  - MySQL에서 JSON 타입을 활용하여 통계 데이터를 저장하는 테이블을 설계하였음. 새로운 통계 항목을 추가할 때 기존 스키마를 변경하지 않고도 유연하게 데이터를 관리할 수 있도록 함 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/jackson-databind-exc-inrecognizedpropertyexception-not-marked-as-ignorable-60d7ccd03cfa)
+  - 테스트 코드 작성으로, 아키텍쳐 변경이 3번 이상 있었음에도 불구하고, 코드의 검증과정을 테스트 코드를 통해 신속하게 완료
+  - 레거시 프로젝트에 포함된 월간 매체 통계 Job 을 새로운 Batch 프로젝트의 Job 으로 Migration 하였음. Maven XML configuration 파일 분석을 통해 기존 통계 방식을 이해하고 코드 Migration 진행. JPA 와 criteria 로 구현된 코드를 Jooq 로 migration 하였음. 통계에 사용 되는 테이블을 분석하고 기존 뉴스시스템과의 커플링 되어있는 로직을 분석하였음.
+  - 구현과정에서 발생한 문제를 해결함으로써 Spring Batch 에 대한 이해 향상. Spring Batch 파티션 중첩으로 인한 thread 중복 실행 이슈 수정 [🔗](https://medium.com/@bey4314/spring-batch-cannot-restart-step-from-starting-status-e4ab9fa761a3), Batch DB Connection Pool Size 예외 수정 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-datasource-connectionpoolsize-exception-293d2def021b) StepExitStatus 종료에 따른 flow 수행 결과 관찰 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-flow-%EC%9D%98step-%EC%97%90%EC%84%9C-stepexitstatus-%EB%A5%BC-failed-%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%9C%EB%8B%A4%EB%A9%B4-%EB%8B%A4%EC%9D%8C-step-%EC%9D%80-%EC%8B%A4%ED%96%89%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94%EB%8B%A4-d39c4e35413c),  Scope 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-scopenotactiveexception-8e63bfc35b7d) , JobParameter 와 JobExecution [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-jobparameter-%EB%8A%94-%EB%B3%80%EA%B2%BD%ED%95%A0-%EC%88%98-%EC%97%86%EB%8B%A4-36ab28607357), Spring Quartz JobData 의 Deserialization, Serialization Ingore serialVersionUID Exception [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-quartz-jobdata-%EC%9D%98-deserialization-serialization-ingore-serialversionuid-exception-847aaf3ebec2)
 
-#### culture-infomation
+ 
+#### 뉴스줌 저작권 위반 이미지 응답 차단 프로젝트
+- 기간
+  - 2023.10
 - 개요
-  - 문화 정보를 크롤링하는 git action flow 작성하고, react 로 웹뷰 구현
-- tech
-  - node.js, react.js
-- repository
-  - https://github.com/eyabc/culture-infomation
-  - https://github.com/eyabc/culture-infomation-frontend
+  - Copytrack 서비스로 인한 이미지 저작권 문제로 발생한 재정적 문제를 해결하기 위해, 문제가 되는 이미지 리소스 요청의 Response 차단하는 어플리케이션 개발. [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%A0%80%EC%9E%91%EA%B6%8C-%EA%B4%80%EB%A0%A8-%EC%9D%91%EB%8B%B5-%EC%B0%A8%EB%8B%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-84911b405751)
  
 #### 뉴스줌 Batch 데이터 처리 프로젝트
 - 기간
@@ -59,7 +62,7 @@
   - 송고 기사 통계 집계 Job. Flow와 Partitioner를 활용하여 매체사별로 병렬로 작업이 실행되도록 하여 처리 속도를 향상. 인덱스가 없어 발생하는 슬로우 쿼리 문제를 Redis 를 사용하여 집계.
   - Quartz + Spring Batch 를 조합하여, 대용량 처리에 적합한 Batch 와, Quartz 를 사용하여 Quartz Job 이 Trigger 가 될 때 Batch Job 을 실행시키는 구조를 구현함
   - Batch Job 테스트와, Jooq 메서드 테스트 코드를 작성 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-test-%EC%BD%94%EB%93%9C%EC%97%90%EC%84%9C-job-%EC%8B%A4%ED%96%89-%EC%8B%9C%ED%82%A4%EA%B8%B0-5f57c46972aa)
-
+  
 
 #### 뉴스줌 파서 프로젝트
 - 기간
@@ -254,7 +257,32 @@
   - 텍스트 엘리먼트에 대한 상수 선언으로 오타 최소화 및 코드 가독성 향상
   - 실행 중인 job의 ID를 조회하는 기능 추가
   - logback 설정 추가
-  - Batch 사용이 없는 데이터베이스에 연결된 Quartz Scheduler 예외 처리.  
+  - Batch 사용이 없는 데이터베이스에 연결된 Quartz Scheduler 예외 처리.
+ 
+### Side Project
+
+#### collosseum-ticketing
+- 개요
+  - 콜로세움 예약 가능 티켓 발생 시, slack 으로 알림을 받을 수 있는 git action flow 작성. 
+- repository
+  - https://github.com/eyabc/collosseum-ticketing-macro
+- tech
+  - node.js
+
+#### culture-infomation
+- 개요
+  - 문화 정보를 크롤링하는 git action flow 작성하고, react 로 웹뷰 구현
+- tech
+  - node.js, react.js
+- repository
+  - https://github.com/eyabc/culture-infomation
+  - https://github.com/eyabc/culture-infomation-frontend
+ 
+#### 바코드 사진 인식 앱 개발
+- 개요
+  - 모바일 갤러리에서 바코드를 포함한 이미지를 스캔하고 모아서 조회할 수 있는 유틸리티 앱. 흩어진 기프티콘, 멤버십, 교통 티켓 등의 바코드를 통합하여 편리하게 확인할 수 있는 기능을 제공
+바코드 조회 시 화면 밝기를 최대로 설정하여 인식율을 높이도록 설계함
+    
 
 
 ### Articles
