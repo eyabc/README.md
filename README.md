@@ -46,7 +46,13 @@
   - https://github.com/eyabc/culture-infomation
   - https://github.com/eyabc/culture-infomation-frontend
  
+#### Redis Cache 도입
+- 기간
+  - 2023.02 
+ 
 #### NAS의 static 이미지 삭제 프로젝트 
+- 기간
+  - 2022.11 
 - 개요
   - 이미지 서버에 요청된 path 로, nginx 의 rewrite 규칙을 적용하여 원본 이미지를 리턴하는 서버가 있다. 여러 스토리지가 다양한 경로로 mount 되어 있기 떄문에 nginx 의 rewrite 규칙이 적용되어 있는 것이다.
   - 기존에 저작권 문제가 있는 이미지 삭제를 위해, nginx rewrite 규칙 대상에 위치하는 리소스의 위치들에서 파일들의 존재여부를 모두 확인하고 이미지 삭제 후, CDN 의 캐시를 purge 하는 과정이 있었다.
