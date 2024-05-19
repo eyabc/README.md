@@ -46,6 +46,21 @@
   - https://github.com/eyabc/culture-infomation
   - https://github.com/eyabc/culture-infomation-frontend
  
+#### 뉴스줌 PC / MOBILE 프로젝트
+- 기간 
+  - 2021.03 ~ 2024.01
+- 개요
+  - 뉴스줌 PC 프로젝트 https://news.zum.com/ 유지보수
+  - 뉴스줌 Mobile 프로젝트 https://m.news.zum.com/ 유지보수
+  - Spring MVC Template Engine 과 Jquery 환경의 SSR FrontEnd 프로젝트
+- 내용
+  - 운영 담당자의 버그 및 장애 보고를 대응하기 위해, 문제 원인을 Controller, API, Batch, 파서 등의 어플리케이션을 분석을 통해 파악하고 문제 대응. 데이터 플로우를 문서화하여 공유
+  - HTTP Request 예외 발생에 대한 방어 로직 구현
+  - 광고 스크립트 HTML, Javascript, CSS 교체 및 삽입
+  - 브라우저 이벤트를 감지하여 통계 서버에 메타데이터 데이터 Request 개발.
+  - 송고된 기사의 본문을 뉴스줌 Frontend 환경에 맞게 포매팅하여 노출되도록 문자열 치환 로직 유지 보수
+  - IOS의 웹브라우저에서 광고 렌더링 이슈 발생, Webkit 기반 모바일 브라우저에서만 재현되며, 특정 스크립트 재로드로 문제 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/ios-%EC%9D%98-%EC%9B%B9%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%97%94%EC%A7%84-%ED%8A%B9%EC%9D%B4%EC%84%B1-%EC%9D%B4%EC%8A%88-f069652b50d9)
+ 
 #### 뉴스줌 모바일 어플리케이션의 Frontend-Backend 분리
 - 기간
   - 2023.07
