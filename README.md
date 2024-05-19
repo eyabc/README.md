@@ -46,9 +46,23 @@
   - https://github.com/eyabc/culture-infomation
   - https://github.com/eyabc/culture-infomation-frontend
  
-#### Redis Cache 도입
+#### Redis Cache 도입 
 - 기간
-  - 2023.02 
+  - 2023.02
+- 개요
+  - Redis Cache 사용하여 분산된 서버의 중복된 데이터를 Redis로 중앙 집중화. MySql 서버 부하 감소를 시켜 안정성과 성능 그리고 물리적 리소스 확보.
+  - MySql 데이터 마이그레이션, 코드 리팩터링, 최적화, 운영 전략 등을 통해 성과를 달성.
+- 내용 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/redis-cache-%EB%8F%84%EC%9E%85-8cf4565feb43)
+  - Redis의 특성에 맞춰 리소스 효율성을 높이기 위해 싱글스레드 이벤트 기반 비동기를 지원하는 Lettuce Redis Client 를 선택하였음
+  - 멀티모듈의 스파게티 코드를 하나의 인터페이스로 통합하여 단일포인트 메서드를 만들고, Redis로의 마이그레이션 진행
+  - Sentinel을 활용하여 고가용성을 확보
+  - Redis Benchmark를 활용하여 어플리케이션에서 사용하는 SET 및 GET 명령어의 처리량을 테스트하고 안정적인 처리를 확인
+  - Graphana 를 이용한 레디스 서버 리소스 모니터링 진행
+  - Batch 와 CMS 에서 MySQL 에 캐시하였던 데이터를 Redis 로 Migration 하기 위해 StringRedisSerializer 사용. API 는 Ehache 로부터 Migration 하기 위해 CacheManager 에 GenericJackson2JsonRedisSerializer 설정. 상이한 환경에서 레디스 클라이언트 사용 경험하였음.
+  - 안정적인 프로젝트 운영을 위한 배포 및 롤백 시나리오를 구성하여 장애 대응 및 시스템 안정성을 고려
+  - 도메인 특성을 고려하여 적절하게 Redis의 maxmemory-policy 정책을 volatile-lru로 설정하여 Expire 설정된 키 중에서 오래된 키를 삭제하도록 구성했습니다.
+  - Sentinel 의 부하 분산 방법으로, REPLICA_PREFERRED 선택. GET 명령어는 Replica에서 실행하고, 장애를 대비하기 위해 Replica 를 사용할 수 없을 경우 Master에서 실행하도록 설정하였음.
+  - 
  
 #### NAS의 static 이미지 삭제 프로젝트 
 - 기간
