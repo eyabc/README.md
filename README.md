@@ -131,7 +131,7 @@
 - 기간
   - 2023.02
 - 개요
-  - Redis Cache 사용하여 분산된 서버의 중복된 데이터를 Redis로 중앙 집중화. MySql 서버 부하 감소를 시켜 안정성과 성능 그리고 물리적 리소스 확보.
+  - Redis Cache 사용하여 분산된 서버의 중복된 데이터를 Redis로 중앙 집중화. 데이터 일관성 확립. MySql 서버 부하 감소를 시켜 안정성과 성능 그리고 물리적 리소스 확보.
   - MySql 데이터 마이그레이션, 코드 리팩터링, 최적화, 운영 전략 등을 통해 성과를 달성.
 - 내용 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/redis-cache-%EB%8F%84%EC%9E%85-8cf4565feb43)
   - Redis의 특성에 맞춰 리소스 효율성을 높이기 위해 싱글스레드 이벤트 기반 비동기를 지원하는 Lettuce Redis Client 를 선택하였음
