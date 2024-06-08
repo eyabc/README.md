@@ -335,6 +335,9 @@
 - [AB Test](https://gitmind.com/app/docs/m5hxci8q)
 - [Jira 적응기](https://medium.com/@bey4314/jira-%EC%A0%81%EC%9D%91%EA%B8%B0-9f2158d637ae)
 - [비밀번호와 무의식적 암시](https://medium.com/@bey4314/%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0-7831cad2c59c)
+- [함께자라기](https://eyabc.github.io/docs/consultant/%ED%95%A8%EA%BB%98%EC%9E%90%EB%9D%BC%EA%B8%B0/index)
+- [소프트웨어 공학](https://gitmind.com/app/docs/mr7xhjad)
+
   
 #### Search Engine Optimization
 - [robots.txt, sitemap.xml](https://medium.com/@bey4314/robots-txt-sitemap-xml-343a317a75f2)
@@ -359,6 +362,17 @@
 - [Spring Batch Partitioner JobScope 의 중복](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-jobscope-%EC%9D%98-%EC%A4%91%EB%B3%B5-96383da69808)
 - [Spring Batch Test 코드에서 Job 실행 시키기](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-test-%EC%BD%94%EB%93%9C%EC%97%90%EC%84%9C-job-%EC%8B%A4%ED%96%89-%EC%8B%9C%ED%82%A4%EA%B8%B0-5f57c46972aa)
 - [SimpleStepHandler](https://medium.com/@EeUuNnYuOuUuNnGg/simplestephandler-0f5b68a55516)
+
+#### Database
+- [Managing Hierarchical Data in MySQL](https://eyabc.github.io/docs/database/ManagingHierarchicalData_in_MySQL)
+- [오라클 전문가로 가는 지름길](https://eyabc.github.io/docs/database/오라클_전문가로_가는_지름길/1-자료의조회)
+- [dynamoDB](https://eyabc.github.io/docs/database/dynamoDB/1-Introduction)
+- [Introduction to Redis](https://eyabc.github.io/docs/database/redis/Introduction%20to%20Redis/)
+- [MongoDB 완벽가이드](https://medium.com/@bey4314/mongodb-완벽-가이드-05e9e5459a55)
+- [mysql json](https://gitmind.com/app/docs/m8zqw2s5)
+- [Redis Stream](https://gitmind.com/app/docs/m4zmn1vw)
+- [이것이 레디스다](https://gitmind.com/app/docs/mr4ubzki)
+
 
 ### Book
 - [Real MySQL 8.0 (1권)](https://search.shopping.naver.com/book/catalog/32443973624?query=Mysql%208.0&NaPm=ct%3Dlw7gpmy8%7Cci%3D32cea7114111a158e964d9be5c0c7fa73cfd7af7%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3D5bc7b1d55bfde67cae5194b43438b99fc60c30ed)
