@@ -386,7 +386,7 @@
 - [Javascript](https://eyabc.github.io/docs/javascript/javascript/index)
 - [객체지향 Javascript](https://eyabc.github.io/docs/javascript/OOP/OOP_value_and_identifier_context)
 - [Browser window-opener](https://eyabc.github.io/docs/javascript/browser/window-opener), [Browser_Event](https://eyabc.github.io/docs/javascript/browser_events/Browser_Event)
-- [Clean Code Javascript](https://eyabc.github.io/docs/javascript/clean_code/CleanCodeJavascript#변수-variables), [airbnb js style guides](https://eyabc.github.io/docs/javascript/airbnb_js_style_guides/자바스크립트 스타일 가이드)
+- [Clean Code Javascript](https://eyabc.github.io/docs/javascript/clean_code/CleanCodeJavascript#변수-variables), [airbnb js style guides](https://eyabc.github.io/docs/javascript/airbnb_js_style_guides/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%8A%A4%ED%83%80%EC%9D%BC%20%EA%B0%80%EC%9D%B4%EB%93%9C/)
 - [Javascript 함수형 프로그래밍](https://eyabc.github.io/docs/javascript/functional_programming/1_%ED%95%A8%EC%88%98%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EA%B0%9C%EC%9A%94/)
 - [Javascript 비동기 프로그래밍](https://eyabc.github.io/docs/javascript/asynchronous_programming/Sync%20Async/)
 - [Javascript 모듈](https://eyabc.github.io/docs/javascript/module/%EB%AA%A8%EB%93%88/)
