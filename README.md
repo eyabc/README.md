@@ -382,6 +382,23 @@
 - [RAID](https://gitmind.com/app/docs/miru87x1)
 - [수동 IP 로 변경하기](https://gitmind.com/app/docs/m931d7fe)
 
+#### Javascript & Browser
+- [Javascript](https://eyabc.github.io/docs/javascript/javascript/index)
+- [객체지향 Javascript](https://eyabc.github.io/docs/javascript/OOP/OOP_value_and_identifier_context)
+- [Browser window-opener](https://eyabc.github.io/docs/javascript/browser/window-opener), [Browser_Event](https://eyabc.github.io/docs/javascript/browser_events/Browser_Event)
+- [Clean Code Javascript](https://eyabc.github.io/docs/javascript/clean_code/CleanCodeJavascript#변수-variables), [airbnb js style guides](https://eyabc.github.io/docs/javascript/airbnb_js_style_guides/자바스크립트 스타일 가이드)
+- [Javascript 함수형 프로그래밍](https://eyabc.github.io/docs/javascript/functional_programming/1_%ED%95%A8%EC%88%98%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EA%B0%9C%EC%9A%94/)
+- [Javascript 비동기 프로그래밍](https://eyabc.github.io/docs/javascript/asynchronous_programming/Sync%20Async/)
+- [Javascript 모듈](https://eyabc.github.io/docs/javascript/module/%EB%AA%A8%EB%93%88/)
+- [Javascript 객체](https://eyabc.github.io/docs/javascript/object/%EA%B0%9D%EC%B2%B4%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95/)
+- [next.js](https://eyabc.github.io/docs/nest-js/index)
+- [html](https://eyabc.github.io/docs/html/index)
+- [css background-image](https://eyabc.github.io/docs/css/background-image) [graphics_system](https://eyabc.github.io/docs/css/css-rendering/graphics_system)
+- [HTTP headers Referrer 보안이슈](https://eyabc.github.io/docs/network/HTTP_headers_Referer_보안이슈)
+- [CORS](https://eyabc.github.io/docs/network/CORS)
+- [HTTPS 를 개발환경에서 사용하는 이유](https://eyabc.github.io/docs/network/HTTPS_를_개발환경에서_사용하는_이유)
+
+
 ### Book
 - [Real MySQL 8.0 (1권)](https://search.shopping.naver.com/book/catalog/32443973624?query=Mysql%208.0&NaPm=ct%3Dlw7gpmy8%7Cci%3D32cea7114111a158e964d9be5c0c7fa73cfd7af7%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3D5bc7b1d55bfde67cae5194b43438b99fc60c30ed)
 - [이것이 레디스다](https://search.shopping.naver.com/book/catalog/32436028951?query=%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EB%A0%88%EB%94%94%EC%8A%A4%EB%8B%A4&NaPm=ct%3Dlw7gqnzk%7Cci%3D17a10802e0c9cbf97ef55bff9cdade78631e2969%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3Db45e38a69a38726078cbec6d00669cc9bfb1b7d8)
