@@ -346,6 +346,10 @@
 - [자바 데이터 타입, 변수 그리고 배열](https://gitmind.com/app/docs/mm2bnfvn)
 - [java collection](https://gitmind.com/app/docs/mlg1dh2n)
 - [Spring logging Logback](https://gitmind.com/app/docs/m2znzvgs)
+- [Property ‘spring.profiles.active’ imported from location ‘class path resource](https://medium.com/@bey4314/springboot-property-spring-profiles-active-imported-from-location-class-path-resource-b1078ceaccc2)
+- [Gradle Mutli-module Property 정의하기](https://medium.com/@bey4314/gradle-mutli-module-property-%EC%A0%95%EC%9D%98%ED%95%98%EA%B8%B0-7a15b9c0bbe7)
+- [micrometer](https://medium.com/@EeUuNnYuOuUuNnGg/micrometer-%EB%8F%84%EC%9E%85-68fcce6f167b)
+- [SpringBoot Runtime 에서 Bean 생성/삭제](https://medium.com/@EeUuNnYuOuUuNnGg/springboot-runtime-%EC%97%90%EC%84%9C-bean-%EC%83%9D%EC%84%B1-%EC%82%AD%EC%A0%9C-e93133bf1231)
 
 #### JPA
 - [JPA, javax.persistence, Hibernate, Spring Data JPA](https://medium.com/@EeUuNnYuOuUuNnGg/spring-jpa-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0-d32a07dd045a)
@@ -353,11 +357,6 @@
 #### MySql
 - [MySql 필드 값에 여러가지 값을 넣기 위한 방법](https://medium.com/@bey4314/mysql-%ED%95%84%EB%93%9C-%EA%B0%92%EC%97%90-%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EA%B0%92%EC%9D%84-%EB%84%A3%EA%B8%B0-%EC%9C%84%ED%95%9C-%EB%B0%A9%EB%B2%95-be29b68462d1)
 - [MySql 쿼리 성능 개선](https://medium.com/@bey4314/mysql-%EC%BF%BC%EB%A6%AC-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0-0141d9d062da)
-
-#### Spring
-- [Property ‘spring.profiles.active’ imported from location ‘class path resource](https://medium.com/@bey4314/springboot-property-spring-profiles-active-imported-from-location-class-path-resource-b1078ceaccc2)
-- [Gradle Mutli-module Property 정의하기](https://medium.com/@bey4314/gradle-mutli-module-property-%EC%A0%95%EC%9D%98%ED%95%98%EA%B8%B0-7a15b9c0bbe7)
-- [micrometer](https://medium.com/@EeUuNnYuOuUuNnGg/micrometer-%EB%8F%84%EC%9E%85-68fcce6f167b)
 
 #### Kafka
 - [docker-compose 로 Kafka 컨테이너를 생성하고, 어플리케이션에서 접근하기](https://medium.com/@bey4314/docker-compose-%EB%A1%9C-kafka-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90%EC%84%9C-%EC%A0%91%EA%B7%BC%ED%95%98%EA%B8%B0-f7915850619c)
