@@ -21,16 +21,21 @@
 ★dart, Express.js, Nest.js, Flutter, React.js, MongoDB
 
 ### Project
-
-#### 뉴스 검색 파서 리팩터링 
+<details>
+  <summary>뉴스 검색 파서 리팩터링 </summary>
+  
 - 기간 2024.03 ~ 진행중
 - 개요
   - 여러 매체사에서 송고한 XML 파일을 파싱하여 뉴스줌과 줌인터넷의 여러 서비스에서 기사 컨텐츠를 노출하기 위한 프로젝트. 검색엔진에만 노출되는 기사를 송고하는 매체사의 XML 파싱 관리. 검색제휴 기사 파싱 과정 중 기존 현황과 문제점을 분석하여 전체적인 개선을 진행함
 - articles
   - [java-inotify](https://medium.com/@bey4314/mysql-%EC%BF%BC%EB%A6%AC-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0-0141d9d062da)
   - [어떤 Queue 를 사용해야 할까](https://medium.com/@bey4314/%EC%96%B4%EB%96%A4-queue-%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C-fe5bcc0afdc1)
- 
-#### 뉴스 송고 기사 통계 개발
+    
+</details>
+
+<details>
+  <summary>뉴스 송고 기사 통계 개발</summary>
+
 - 기간
   - 2024.01 ~ 2024.03
 - 개요
@@ -42,14 +47,21 @@
   - 레거시 프로젝트에 포함된 월간 매체 통계 Job 을 새로운 Batch 프로젝트의 Job 으로 Migration 하였음. Maven XML configuration 파일 분석을 통해 기존 통계 방식을 이해하고 코드 Migration 진행. JPA 와 criteria 로 구현된 코드를 Jooq 로 migration 하였음. 통계에 사용 되는 테이블을 분석하고 기존 뉴스시스템과의 커플링 되어있는 로직을 분석하였음.
   - 구현과정에서 발생한 문제를 해결함으로써 Spring Batch 에 대한 이해 향상. Spring Batch 파티션 중첩으로 인한 thread 중복 실행 이슈 수정 [🔗](https://medium.com/@bey4314/spring-batch-cannot-restart-step-from-starting-status-e4ab9fa761a3), Batch DB Connection Pool Size 예외 수정 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-datasource-connectionpoolsize-exception-293d2def021b) StepExitStatus 종료에 따른 flow 수행 결과 관찰 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-flow-%EC%9D%98step-%EC%97%90%EC%84%9C-stepexitstatus-%EB%A5%BC-failed-%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%9C%EB%8B%A4%EB%A9%B4-%EB%8B%A4%EC%9D%8C-step-%EC%9D%80-%EC%8B%A4%ED%96%89%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94%EB%8B%A4-d39c4e35413c),  Scope 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-scopenotactiveexception-8e63bfc35b7d) , JobParameter 와 JobExecution [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-jobparameter-%EB%8A%94-%EB%B3%80%EA%B2%BD%ED%95%A0-%EC%88%98-%EC%97%86%EB%8B%A4-36ab28607357), Spring Quartz JobData 의 Deserialization, Serialization Ingore serialVersionUID Exception [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-quartz-jobdata-%EC%9D%98-deserialization-serialization-ingore-serialversionuid-exception-847aaf3ebec2)
 
- 
-#### 뉴스줌 저작권 위반 이미지 응답 차단 프로젝트
+</details>
+
+<details>
+  <summary>뉴스줌 저작권 위반 이미지 응답 차단 프로젝트</summary>
+
 - 기간
   - 2023.10
 - 개요
   - Copytrack 서비스로 인한 이미지 저작권 문제로 발생한 재정적 문제를 해결하기 위해, 문제가 되는 이미지 리소스 요청의 Response 차단하는 어플리케이션 개발. [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%A0%80%EC%9E%91%EA%B6%8C-%EA%B4%80%EB%A0%A8-%EC%9D%91%EB%8B%B5-%EC%B0%A8%EB%8B%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-84911b405751)
- 
-#### 뉴스줌 Batch 데이터 처리 프로젝트
+
+</details>
+
+<details>
+  <summary>뉴스줌 Batch 데이터 처리 프로젝트</summary>
+
 - 기간
   - 2022.12 ~
 - 개요
@@ -62,9 +74,13 @@
   - 송고 기사 통계 집계 Job. Flow와 Partitioner를 활용하여 매체사별로 병렬로 작업이 실행되도록 하여 처리 속도를 향상. 인덱스가 없어 발생하는 슬로우 쿼리 문제를 Redis 를 사용하여 집계.
   - Quartz + Spring Batch 를 조합하여, 대용량 처리에 적합한 Batch 와, Quartz 를 사용하여 Quartz Job 이 Trigger 가 될 때 Batch Job 을 실행시키는 구조를 구현함
   - Batch Job 테스트와, Jooq 메서드 테스트 코드를 작성 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/spring-batch-test-%EC%BD%94%EB%93%9C%EC%97%90%EC%84%9C-job-%EC%8B%A4%ED%96%89-%EC%8B%9C%ED%82%A4%EA%B8%B0-5f57c46972aa)
-  
 
-#### 뉴스줌 파서 프로젝트
+</details>
+
+
+<details>
+  <summary>뉴스줌 파서 프로젝트</summary>
+
 - 기간
   - 2020.10 ~
 - 개요
@@ -84,7 +100,12 @@
   - rsync 를 사용하여 송고된 기사 파일들을 QA 환경에서도 테스트 할 수 있도록 구성하였음
   - ISMS 지적사항 수정. SFTP 전환 매체사 대상 파싱 및 검색 노출 확인, 쉘스크립트를 작성하여 기사 파싱 디렉터리의 목록을 스캔하고, 매체사 사이트를 Javascript 로 크롤링하여 최신기사 리스트의 업데이트 싱크를 확인하는 작업 진행
 
-#### 뉴스줌 인프라 장애대응
+</details>
+
+
+<details>
+  <summary>뉴스줌 인프라 대응</summary>
+
 - 기간
   - 2020.10 ~
 - 개요
@@ -98,8 +119,12 @@
   -  서버에 /etc/fstab 설정이 안되어 있어 서버 재부팅시 마운트 해제 이슈 대응
   -  Nas 의 snapshot 으로 용량이슈를 snapshot 설정 off 조치하였음
   -  log4j2 보안이슈 확인하여 담당 서버 어플리케이션 체크 점검
-    
-#### 뉴스줌 PC / MOBILE 프로젝트
+
+</details>
+
+<details>
+  <summary>뉴스줌 PC / MOBILE 프로젝트</summary>
+
 - 기간 
   - 2021.03 ~ 2024.01
 - 개요
@@ -113,8 +138,12 @@
   - 브라우저 이벤트를 감지하여 통계 서버에 메타데이터 데이터 Request 개발.
   - 송고된 기사의 본문을 뉴스줌 Frontend 환경에 맞게 포매팅하여 노출되도록 문자열 치환 로직 유지 보수
   - IOS의 웹브라우저에서 광고 렌더링 이슈 발생, Webkit 기반 모바일 브라우저에서만 재현되며, 특정 스크립트 재로드로 문제 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/ios-%EC%9D%98-%EC%9B%B9%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%97%94%EC%A7%84-%ED%8A%B9%EC%9D%B4%EC%84%B1-%EC%9D%B4%EC%8A%88-f069652b50d9)
- 
-#### 뉴스줌 모바일 어플리케이션의 Frontend-Backend 분리
+
+</details>
+
+<details>
+  <summary>뉴스줌 모바일 어플리케이션의 Frontend-Backend 분리</summary>
+
 - 기간
   - 2023.07
 - 개요
@@ -125,9 +154,13 @@
   - 백엔드 API를 모바일 웹 서비스에서 분리하고, Swagger를 활용하여 API 명세서 문서 작성
   - Migration 과정에서는 기존 서비스에 영향을 주지 않도록 Spring RestController의 새로운 Endpoint 생성 및 Migration할 프로젝트의 API 메서드 추가
   - 스프링 캐시 스케줄러 도입으로 모바일 API 에 캐시 적용. TTL 설정과 주기적 업데이트를 고려하여 안정성 강화.
-  
- 
-#### 뉴스줌 Redis Cache 도입 
+
+</details>
+
+
+<details>
+  <summary>뉴스줌 Redis Cache 도입 </summary>
+
 - 기간
   - 2023.02
 - 개요
@@ -143,9 +176,12 @@
   - 안정적인 프로젝트 운영을 위한 배포 및 롤백 시나리오를 구성하여 장애 대응 및 시스템 안정성을 고려
   - 도메인 특성을 고려하여 적절하게 Redis의 maxmemory-policy 정책을 volatile-lru로 설정하여 Expire 설정된 키 중에서 오래된 키를 삭제하도록 구성했습니다.
   - Sentinel 의 부하 분산 방법으로, REPLICA_PREFERRED 선택. GET 명령어는 Replica에서 실행하고, 장애를 대비하기 위해 Replica 를 사용할 수 없을 경우 Master에서 실행하도록 설정하였음.
-    
- 
-#### 뉴스줌 NAS의 static 이미지 삭제 프로젝트 
+
+</details>
+
+<details>
+  <summary>뉴스줌 NAS의 static 이미지 삭제 프로젝트 </summary>
+
 - 기간
   - 2022.11 
 - 개요
@@ -157,8 +193,12 @@
   - nginx proxy_pass 를 이용한 무중단 배포 환경을 IDC 에서 구성하고, 젠킨스의 빌드 파이프라인을 통해 CICD 환경을 구성함.
   - 이미지 삭제 과정의 단위 테스트 코드 작성
   - 사용자 에러 코드를 정의하여, 이미지 삭제를 요청하는 서버에서 문제를 파악하고 대응할 수 있도록하였음
- 
-#### 뉴스줌 MySQL 업그레이드, 슬로우 쿼리 및 Replication Delay 이슈 해결, 데이터 일관성 강화, 안정성 개선 등 다양한 작업 수행
+
+</details>
+
+<details>
+  <summary>뉴스줌 MySQL 업그레이드, 슬로우 쿼리 및 Replication Delay 이슈 해결, 데이터 일관성 강화, 안정성 개선 등 다양한 작업 수행</summary>
+
 - MySQL 슬로우 쿼리로 인한 Connection request timed out 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-slow-query-%EB%A1%9C-%EC%9D%B8%ED%95%9C-connection-request-timed-out-%EC%9D%B4%EC%8A%88-37bf90eda792)
 - MySQL 의 Replication Delay 발생사례와 VIP 에서 서버를 제외하여 데이터 갱신 이슈 해결 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/mysql-%EC%9D%98-replication-delay-%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EB%B2%84%EA%B7%B8-%EB%B0%9C%EC%83%9D-2456ed49f693)
 - MySql 5.5 → 8.0 업그레이드
@@ -170,8 +210,12 @@
 - Slave, Master MySql DB 커넥션 안정화와 역할 분리를 하기 위해, API 어플리케이션에서는 Slave Datasource 에서 Read 만 하도록 소스 코드를 변경하였고, API 에서 발생하는 Create, Update, Delete 코드를 Batch 혹은 CMS 어플리케이션으로 Migration 진행
 - 실서버 DB 의 리플리케이션이 된 QA DB의, autoincrement duplication 문제 해결
 - ISMS 지적사항 수정
-  
-#### 줌인터넷 프로젝트 기능 개발 
+
+</details>
+
+<details>
+  <summary>줌인터넷 프로젝트 기능 개발 </summary>
+
 - 기간 2021.02 ~
   
 - [줌프런트 뉴스박스](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F119ddbc4-c469-4b2a-ad73-653ceed5ec81%2Fadc05539-8696-499c-91ac-fba7ec95df85%2FUntitled.png?table=block&id=68f63463-6f5d-4d45-8376-40e3e5ea9d45&spaceId=119ddbc4-c469-4b2a-ad73-653ceed5ec81&width=2000&userId=3870e774-c131-4649-accd-876479d0a85d&cache=v2) 기능 개발
@@ -214,8 +258,13 @@
   - 스타트줌은 줌인터넷의 브라우저 시작페이지 서비스.
   - 스타트줌 백엔드 개발자 및 기획자, 데이터 엔지니어 등 모든 담당자 간 뉴스 API 개발 히스토리를 공유하며 협업에 중점을 두었음.
   - Swagger-UI를 적용하여 API 개발 투명성 향상
- 
-#### 뉴스줌 프로젝트 개선
+    
+</details>
+
+<details>
+  <summary>뉴스줌 프로젝트 개선</summary>
+
+
 - 기간
   - 2021.02 ~ 
 - 내용
@@ -228,12 +277,15 @@
   - API 프로젝트 전체 endpoint 의 swagger 적용 및 문서화. nginx access 로그를 통한 사용되지 않는 endpoint 분석. endpoint 사용처 문서화
   - Java melody 모니터링 라이브러리 적용 [🔗](https://medium.com/@EeUuNnYuOuUuNnGg/java-melody-af186124ac4c)
 
+</details>
 
-#### Quartz Scheduler 어드민의 동적 데이터소스 구현 [🔗](https://zuminternet.github.io/ZUM-Pilot-advanced_quartz_scheduler_admin/)
+<details>
+  <summary> Quartz Scheduler 어드민의 동적 데이터소스 구현  </summary>
+
 - 기간
   - 2020.12 ~ 2021.02  
-- 개요
-  - 다중 데이터 소스를 동적으로 관리하고 모니터링하는 어드민 구현
+- 개요 
+  - 다중 데이터 소스를 동적으로 관리하고 모니터링하는 어드민 구현 [🔗](https://zuminternet.github.io/ZUM-Pilot-advanced_quartz_scheduler_admin/)
 - 사용 기술
   - SpringBoot, Java, Node, SpringJPA, Spring Security, Vuex, Vue2, ES2020, MySQL, RoutingDataSource
 - 내용
@@ -258,7 +310,9 @@
   - 실행 중인 job의 ID를 조회하는 기능 추가
   - logback 설정 추가
   - Batch 사용이 없는 데이터베이스에 연결된 Quartz Scheduler 예외 처리.
- 
+
+</details>
+
 ### Side Project
 
 #### collosseum-ticketing
@@ -286,6 +340,8 @@
 
 
 ### Articles
+<details>
+  <summary></summary>
 
 #### IDE
 - [IntelliJ Java SonarLint Plugin](https://medium.com/@bey4314/intellij-java-sonarlint-plugin-6af7b29b0cdc)
@@ -447,3 +503,5 @@
 - [밑바닥부터 만드는 컴퓨팅 시스템](https://search.shopping.naver.com/book/catalog/39383703623?cat_id=50010921&frm=PBOKPRO&query=%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0+%EB%A7%8C%EB%93%9C%EB%8A%94+%EC%BB%B4%ED%93%A8%ED%8C%85+%EC%8B%9C%EC%8A%A4%ED%85%9C&NaPm=ct%3Dlw7gwxao%7Cci%3Dca55422478c3ddb738d46eb7d86a85358cf81939%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Df5cf1ea2bbae389d59ab4d7d5f971437d06ac640)
 - [스프링 입문을 위한 자바 객체 지향의 원리와 이해](https://search.shopping.naver.com/book/catalog/32462919817?cat_id=50010920&frm=PBOKPRO&query=%EC%8A%A4%ED%94%84%EB%A7%81+%EC%9E%85%EB%AC%B8%EC%9D%84+%EC%9C%84%ED%95%9C+%EC%9E%90%EB%B0%94+%EA%B0%9D%EC%B2%B4+%EC%A7%80%ED%96%A5%EC%9D%98+%EC%9B%90%EB%A6%AC%EC%99%80+%EC%9D%B4%ED%95%B4&NaPm=ct%3Dlw7gxsxk%7Cci%3D09f7a89688a71d5324542a08cccf981af11bccfa%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D5b5f855b66aa95ee8316e70a9ac5bb60ab01236d)
 - [MongoDB 완벽 가이드](https://search.shopping.naver.com/book/catalog/32481967929?cat_id=50010586&frm=PBOKPRO&query=MONGODB+%EC%99%84%EB%B2%BD+%EA%B0%80%EC%9D%B4%EB%93%9C&NaPm=ct%3Dlw7gyt74%7Cci%3D7a6c1982bb77a030462df471eee56ad34fe49ab3%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Da628c67a344293ad848763efedcbc698a3d665cf)
+
+</details>
