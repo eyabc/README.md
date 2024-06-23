@@ -406,6 +406,7 @@
 - [micrometer](https://medium.com/@EeUuNnYuOuUuNnGg/micrometer-%EB%8F%84%EC%9E%85-68fcce6f167b)
 - [SpringBoot Runtime 에서 Bean 생성/삭제](https://medium.com/@EeUuNnYuOuUuNnGg/springboot-runtime-%EC%97%90%EC%84%9C-bean-%EC%83%9D%EC%84%B1-%EC%82%AD%EC%A0%9C-e93133bf1231)
 - [Bean 이 아니어도 AOP 를 적용할 수 있는 방법 탐구](https://medium.com/@EeUuNnYuOuUuNnGg/bean-%EC%9D%B4-%EC%95%84%EB%8B%88%EC%96%B4%EB%8F%84-aop-%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EB%B0%A9%EB%B2%95-%ED%83%90%EA%B5%AC-70ab58375462)
+- [Logback, Fluentd](https://medium.com/@EeUuNnYuOuUuNnGg/logback-fluentd-fbaf2b10b117)
 
 #### JPA
 - [JPA, javax.persistence, Hibernate, Spring Data JPA](https://medium.com/@EeUuNnYuOuUuNnGg/spring-jpa-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0-d32a07dd045a)
