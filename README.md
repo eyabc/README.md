@@ -419,6 +419,7 @@
 - [IntelliJ Kafka 도구 사용하기](https://medium.com/@bey4314/intellij-kafka-%EB%8F%84%EA%B5%AC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-4e9db6b2d742)
 - [Java Kafka Consumer 구현](https://medium.com/@bey4314/java-kafka-consumer-%EA%B5%AC%ED%98%84-5c186307800a)
 - [Java Kafka CommonErrorHandler 에 예외가 전파되기 전에 AOP 로 예외 처리하기](https://medium.com/@bey4314/java-kafkalistenrerrorhandler-%EC%97%90-%EC%98%88%EC%99%B8%EA%B0%80-%EC%A0%84%ED%8C%8C%EB%90%98%EA%B8%B0-%EC%A0%84%EC%97%90-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0-0d8c621f571f)
+- [Kafka Streams 기반의 분산 처리와 모니터링 개선 사례 연구](https://medium.com/@EeUuNnYuOuUuNnGg/efk-kafka-logback-%EC%9D%B4%EA%B2%83%EC%A0%80%EA%B2%83-f9b8e94d1303)
 
 #### ETC
 
